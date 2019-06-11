@@ -1,0 +1,24 @@
+{
+  "name": "world-info",
+  "version": "1.0.5",
+  "description": "Npm library to fetch any country's capital given the country name",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sashank Tungaturthi",
+  "keywords": [
+    "capitals",
+    "countries",
+    "world",
+    "information",
+    "timezones",
+    "UTC"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^2.6.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
