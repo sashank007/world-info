@@ -1,6 +1,6 @@
 # World Info
 
-## An NPM package which helps you get any Country's capital.
+## An NPM package which helps you get any information of a Country.
 
 ### There are 2 functions, Future functions will be added based on usage and necessity.
 
@@ -16,4 +16,4 @@
 
 `var worldInfo = require('world-info')`  
 `worldInfo.getCapital('India')`  
-`worldInfo.getTimeZones('India').then(data => doWhateverWith(data))`  
+`worldInfo.getTimeZones('India').then(data => doWhateverWith(data))`
