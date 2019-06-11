@@ -15,5 +15,5 @@
 ## How to use
 
 `var worldInfo = require('world-info')`  
-`worldInfo.getCapital('India')  `
-`worldInfo.getTimeZones('India').then(data => doWhateverWith(data))  `
+`worldInfo.getCapital('India')`  
+`worldInfo.getTimeZones('India').then(data => doWhateverWith(data))`  
