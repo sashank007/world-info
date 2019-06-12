@@ -9,8 +9,9 @@ WorldInfo.prototype.getCapital = function(countryName) {
   }
 };
 
+//returns timezones of each country
 WorldInfo.prototype.getTimeZones = async function(countryName) {
-  var timeZones;
+  var resp;
   var uri = `https://restcountries.eu/rest/v2/name/${countryName}?fullText=True`;
 
   //return when promise is resolved only if status is 200
@@ -20,8 +21,41 @@ WorldInfo.prototype.getTimeZones = async function(countryName) {
 
   //if response is not null then return the timezones
   if (response != null) {
-    timeZones = await response.json();
-    return timeZones[0].timezones;
+    resp = await response.json();
+    return resp[0].timezones;
+  } else return "Country not found";
+};
+
+//returns country flag as svg
+WorldInfo.prototype.getFlag = async function(countryName) {
+  var resp;
+  var uri = `https://restcountries.eu/rest/v2/name/${countryName}?fullText=True`;
+
+  //return when promise is resolved only if status is 200
+  let response = await fetch(uri).then(data => {
+    return is200(data);
+  });
+
+  //if response is not null then return the timezones
+  if (response != null) {
+    resp = await response.json();
+    return resp[0].flag;
+  } else return "Country not found";
+};
+
+WorldInfo.prototype.getCurrency = async function(countryName) {
+  var resp;
+  var uri = `https://restcountries.eu/rest/v2/name/${countryName}?fullText=True`;
+
+  //return when promise is resolved only if status is 200
+  let response = await fetch(uri).then(data => {
+    return is200(data);
+  });
+
+  //if response is not null then return the timezones
+  if (response != null) {
+    resp = await response.json();
+    return resp[0].currencies;
   } else return "Country not found";
 };
 
