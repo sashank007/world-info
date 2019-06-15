@@ -41,6 +41,7 @@
 
 `var worldInfo = require('world-info')`  
 `worldInfo.getCapital('India')`  
-`worldInfo.getTimeZones('India').then(data => doWhateverWith(data))`
+`worldInfo.getTimeZones('India').then(data => doWhateverWith(data))`  
 `worldInfo.getFlag('India').then(data => doWhateverWith(data))`  
-`worldInfo.getCurrency('India').then(data => doWhateverWith(data))`
+`worldInfo.getCurrency('India').then(data => doWhateverWith(data))`  
+`worldInfo.getHolidaysForMonth('gbr','2019','1').then(data=>doWhateverWith(data))`
