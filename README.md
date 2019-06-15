@@ -16,22 +16,27 @@
 
 ### The second module is the Holiday Calendar module with the following functions:
 
-**getCountryCode** - Fetches the list of countries and the `country_codes` eligible to be used under this module along with the `holiday_type`.
+**getCountryCode** - Fetches the list of countries and the `country_codes` eligible to be used under this module along with the `holiday_type`.  
+
 **getHolidaysForYear** - Fetches a JSON object with a list of holidays for a given `countryCode` and `year`. The default `holidayType` is `public_holiday`.
-**getHolidaysForMonth** - Fetches a JSON object with a list of holidays for a given `countryCode`, `year` and `month`. The default `holidayType` is `public_holiday`.
-**isPublicHoliday** - Fetches JSON object with key `isPublicHoliday` and value `true|false` when given `countryCode` and `date` as input parameters.
-**isWorkDay** - Fetches a JSON object with key `isWorkDay` and value `true|false` when given `countryCode` and `date` as input parameters.
+
+**getHolidaysForMonth** - Fetches a JSON object with a list of holidays for a given `countryCode`, `year` and `month`. The default `holidayType` is `public_holiday`.  
+
+**isPublicHoliday** - Fetches JSON object with key `isPublicHoliday` and value `true|false` when given `countryCode` and `date` as input parameters.  
+
+**isWorkDay** - Fetches a JSON object with key `isWorkDay` and value `true|false` when given `countryCode` and `date` as input parameters.  
 
 #### Following are the input parameters description:
 
 **countryCode** - [ISO 3166-1 alpha-3 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) or [ISO 3166-1 alpha-2 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)  
-**holidayType** - ..*all - all holiday types
-..*public_holiday - public holidays
-..*observance - observances, not a public holidays
-..*school_holiday - school holidays
-..*other_day - other important days e.g. Mother's day, Father's day etc
-..*extra_working_day - extra working days. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday.  
-**date** - Date in format dd-mm-yyyy
+**holidayType** -
+* all - all holiday types  
+* public_holiday - public holidays  
+* observance - observances, not a public holidays  
+* school_holiday - school holidays  
+* other_day - other important days e.g. Mother's day, Father's day etc  
+* extra_working_day - extra working days. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday.  
+* date - Date in format dd-mm-yyyy  
 
 ## Installation Instructions
 
