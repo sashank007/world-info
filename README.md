@@ -36,7 +36,7 @@
 * school_holiday - school holidays  
 * other_day - other important days e.g. Mother's day, Father's day etc  
 * extra_working_day - extra working days. This day takes place mostly on Saturday or Sunday and is substituted for extra public holiday.  
-* date - Date in format dd-mm-yyyy  
+**date** - Date in format dd-mm-yyyy  
 
 ## Installation Instructions
 
