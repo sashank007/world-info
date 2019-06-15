@@ -1,6 +1,6 @@
 # World Info
 
-## An NPM package which helps you get any information of a Country.
+## An NPM package which helps you get any information of any Country.
 
 ### There are 2 modules in this package. Future functions/modules will be added based on usage and necessity.
 
